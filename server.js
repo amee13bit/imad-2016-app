@@ -13,7 +13,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/argentina',function(req,res){
-    res.send('ARGENTINA FOOTBALL');
+    res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 app.get('/messi',function(req,res){
     res.send('messi THE LEGEND');
