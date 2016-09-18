@@ -12,13 +12,13 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('argentina',function(req,res){
+app.get('/argentina',function(req,res){
     res.send('ARGENTINA FOOTBALL');
 });
-app.get('messi',function(req,res){
+app.get('/messi',function(req,res){
     res.send('messi THE LEGEND');
 });
-app.get('DYBALA',function(req,res){
+app.get('/DYBALA',function(req,res){
     res.send('FEATURE OF ARGENTINA');
 });
 
